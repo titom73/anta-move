@@ -9,6 +9,7 @@ on:
       # Run only if any of the following paths are changed when pushing to main
       - "docs/**"
       - "mkdocs.yml"
+      - ".github/workflows/main-doc.yml"
   workflow_dispatch:
 
 jobs:
@@ -33,4 +34,4 @@ jobs:
       - name: 'Build mkdocs content and deploy to gh-pages to main'
         run: |
             pip install -r requirements.txt
-            mkdocs gh-deploy
+            mkdocs gh-deploy --force --clean --verbose
