@@ -62,10 +62,10 @@ extra:
       link: https://github.com/aristanetworks/anta/pkgs/container/anta
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/anta/
-  version:
-    provider: mike
-    default:
-      - stable
+  # version:
+  #   provider: mike
+  #   default:
+  #     - stable
 
 extra_css:
   - stylesheets/extra.material.css
@@ -76,7 +76,6 @@ extra_javascript:
 
 watch:
   - docs
-  - anta
 
 plugins:
   - mkdocstrings:
